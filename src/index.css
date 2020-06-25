@@ -1,0 +1,87 @@
+/* CSS  Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+button {
+    background: rgb(233, 73, 73);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.55;
+}
+
+/* Scaffolding */
+.container {
+    display: flex;
+    min-height: calc(100% - 60px);
+}
+.header {
+    padding: 16px;
+    background: #2d2d2d;
+    color: #fff;
+}
+.sidebar {
+    width: 240px;
+    padding: 16px;
+    background: rgb(238, 238, 238);
+}
+.sidebar ul li a {
+    display: block;
+    background: rgb(255, 255, 255);
+    color: #222;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.sidebar ul li a.active {
+    background: rgb(233, 73, 73);
+    color: #fff;
+}
+.main {
+    flex-grow: 1;
+}
+
+.page {
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.page h1 {
+    margin-bottom: 32px;
+    color: #222;
+}
